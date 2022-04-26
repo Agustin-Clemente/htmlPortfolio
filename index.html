@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" > <!-- integrity = "sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoUBYZTY5qE0Id1GSseTk6S+L3B1XeVIU" crossorigin="anonymous"> -->
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        
+
+        <title>Portfolio</title>
+
+            </head>
+
+            <body>
+
+                <!--NAV BAR-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Agustin Clemente</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#text-acercade">Acerca de</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experiencia</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#education">Educación</a>
+                          </li>
+                        </ul>
+                        <div class="login-container">
+                            <form action="/action_page.php">
+                              <input type="text" placeholder="Username" name="username">
+                              <input type="text" placeholder="Password" name="psw">
+                              <button type="submit" class="btn btn-info">Login</button>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+
+                  <!--IMAGEN
+                  
+                  <img src="https://static.vecteezy.com/system/resources/previews/002/071/822/non_2x/template-for-science-and-technology-concept-background-free-vector.jpg" class="img-fluid" alt="..." style="width: 1700px; height: 500px;">
+                  -->
+<!--Imagen de perfil
+<div id="info-img">
+    <img class="profile-image" src="https://lh3.googleusercontent.com/a-/AOh14GhNgZsPAiEt9-Spk9hYsztsYyXnKR1zaOAw50Wj=s360-p-no">
+
+</div>
+-->
+
+<div class = "card mat-card" id="first-card">
+    <div id="profile-background"><img src= "https://static.vecteezy.com/system/resources/previews/002/071/822/non_2x/template-for-science-and-technology-concept-background-free-vector.jpg"></div>
+    <div id="info" style="padding: 16px">
+        
+    <div id="info-img">
+    <img class="profile-image" src="https://lh3.googleusercontent.com/a-/AOh14GhNgZsPAiEt9-Spk9hYsztsYyXnKR1zaOAw50Wj=s360-p-no">
+    <div class="btn-edit"><a href="a" class="btn-right"><i class="fa fa-pen"></i></a></div>
+    </div>
+    <div id="info-data">
+        <div>
+            <h1>Agustin Clemente</h1>
+            <div id="info-company">Veterinario UBA</div>
+            <div id="info-contact">
+                <span>Buenos Aires (Argentina)</span>
+                <span><a href="mailto:agustin.clemente@bue.edu.ar">Contacto</a></span>
+            </div>
+        </div>
+        <ul id="info-details">
+            <li><a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/UBA.svg/800px-UBA.svg.png">
+                <h2>UBA</h2>
+            </a></li>
+            <li><a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Logo_de_la_Facultad_de_Ciencias_Veterinarias.jpg">
+                <h2>FVET</h2>
+            </a></li>
+        </ul>
+    </div>
+    <!--
+    <div id="info-actions">
+        <button type="button" class="btn btn-primary">Tengo interes en</button>
+        <button type="button" class="btn btn-light">Añadir sección</button>
+        <button type="button" class="btn btn-light">Más</button>
+    </div>
+    -->
+    </div>
+    
+            </div>
+    
+    
+    
+    <div class = "card mat-card">
+    <div class="card-titles">
+        <h2>Acerca de</h2>
+        <div class="btn-edit" onclick="cambiar_parrafo()">
+            <a href="#text-acercade" class="btn-right"> 
+                <i class="fa fa-pen"></i>
+            </a>
+        </div>
+    </div>
+    
+    <div>
+        <p id="text-acercade">Veterinario, Docente. </p>
+    </div>
+    <div>
+    <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display: none">
+    </div>
+    
+    </div>
+    
+    
+    <div class = "card mat-card">
+        <div id="experience">
+            <div class="card-titles">
+            <h2>Experiencia</h2>
+            <div class="btn-edit"><a href="#" class="btn-right"> <i class="fa fa-pen"></i></a></div>
+        </div>
+        
+        <div>
+            Mariano Acosta.
+        </div>
+    </div>
+        </div>
+
+        <div class = "card mat-card">
+            <div id="education">
+                <div class="card-titles">
+                <h2>Educación</h2>
+                <div class="btn-edit"><a href="#" class="btn-right"> <i class="fa fa-pen"></i></a></div>
+            </div>
+            
+            <div>
+                FVET.
+            </div>
+        </div>
+            </div>
+    
+        <script src="front.js"></script>
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/jd/bootstrap.min.js"></script>
+    
+    
+        <script>
+            function cambiar_parrafo(){
+                document.getElementById("edit-acercade").style.display="block";
+                let texto = document.getElementById("text-acercade").innerText;
+                console.log(texto);
+            };
+    
+            function myFunction2(valor){
+                document.getElementById("text-acercade").innerText=valor;
+            };
+    
+            function logMessage(message){
+                console.log(message + "<br>");
+            }
+    
+            let textarea=document.getElementById("edit-acercade")
+            textarea.addEventListener('keyup', (e) => {
+                logMessage(`Key "${e.key}" released [event:keyup]`);
+                if (e.key=="Enter"){
+                    document.getElementById("edit-acercade").style.display="none"
+                }
+            });
+    </script>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+            </body>
+
+
+</html>
